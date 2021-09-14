@@ -1,1 +1,65 @@
-Hello world!
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="title">
+				Path of Exile Sextant Calculator
+			</div>
+			<div class="sextant">
+				<label>
+					Simple
+				</label>
+				<br/>
+				<div class="sextant_image selected" onclick="sextantClick(this)">
+					<img src="images/simple_sextant.png">
+				</div>
+			</div>
+			<div class="sextant">
+				<label>
+					Prime
+				</label>
+				<br/>
+				<div class="sextant_image" onclick="sextantClick(this)">
+					<img src="images/prime_sextant.png">
+				</div>
+				<br/>
+				<div class="chaos" hidden>
+					<img src="images/chaos_orb.png"/>
+				</div>
+			</div>
+			<div class="sextant">
+				<label>
+					Awakened
+				</label>
+				<br/>
+				<div class="sextant_image" onclick="sextantClick(this)">
+					<img src="images/awakened_sextant.png">
+				</div>
+			</div>
+			<div class="sextant">
+				<label>
+					Elevated
+				</label>
+				<br/>
+				<div class="sextant_image" onclick="sextantClick(this)">
+					<img src="images/elevated_sextant.png">
+				</div>
+			</div>
+			<div class="mods">
+				<table id="simple_sextant_table">
+					<thead>
+						<th>Mod</th>
+						<th>Weight</th>
+					</thead>
+					<tbody id="simple_sextant_table_body">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script src="script.js"></script>
